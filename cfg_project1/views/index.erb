@@ -1,0 +1,25 @@
+<h1>Get a drink!</h1>
+
+
+<table class="table table-striped">
+  <% @drinks.each do |d| %>
+   <tr>
+    <td><%= d.name %></td>
+    </tr>
+  <% end %>
+</table>
+<br>
+
+
+<h3>What do you feel like drinking today?</h3>
+
+<form method='post'>
+  <label>Let us know of the drink you desire?</label>
+  <input type='text' name='drinks_name'>
+  <label>What is your email?</label>
+  <input type='text' name='email'>
+  <input type='submit'>
+</form>
+<br>
+<img src="http://drinksenthusiast.files.wordpress.com/2012/05/mixed-drinks.jpg" />
+<br>
