@@ -1,0 +1,126 @@
+img {
+	display: block;
+	height: 100px;
+	width: 300px;
+	margin: auto;
+}
+
+p {
+	text-align: center;
+	font-family: Garamond, serif;
+	font-size: 18px;
+}
+
+/*Start adding your CSS below!*/
+div {
+    height: 50px;
+    width: 120px;
+    color: #6495ED;
+    border: 2px; 
+    background-color: #BCD2EE;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+    font-family: Garamond;
+}
+
+a { text-decoration:none;
+}
+
+
+margin: 
+auto; is the CSS you use to tell the browser: 
+"Hey! Make sure to set equal margins on each side of this HTML element." 
+When the margins are equal, the object is centered.
+text-align: center; is how you center text elements.
+
+ultimate selector:
+
+* {
+    border: 2px solid black;
+}
+
+* { border: 1px dashed blue;
+    
+}
+
+to select elements that are nested inside another element:
+div > p { /* Some CSS */ }
+
+### classes and IDs ###
+
+CLASS:
+in html: <h3 class="red">I'm an h3 header in the red class!</h3>
+in css: .red {
+    color: red;
+}
+
+ID:
+in html: <p id="rogue">I'm a rogue paragraph! I do what I want!</p>
+in css: #rogue {
+    color: #FF00FF;
+}
+
+/* ----- PSEUDO CLASS SELECTORS ----- */
+/* control the appearance of unvisited and visited links; 
+even links the user is hovering over but hasn't clicked */
+
+selector:pseudo-class_selector {
+    property: value;
+}
+
+>> hoover:
+a:hover {
+    color: #cc0000;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* other pseudo-class selectors:
+a:link: An unvisited link.
+a:visited: A visited link.
+a:hover: A link you're hovering your mouse over. 
+first-child: apply styling to only the elements that are the first 
+children of their parents 
+p:nth-child(2) - any child */
+
+e.g.
+a:link {
+    text-decoration: none;
+    color: #008B45;
+}
+
+a:hover {
+    color: #00FF00;
+}
+
+a:visited {
+    color: #EE9A00;
+}
+
+
+p:nth-child(2) {
+    color: red;
+}
+
+/* -- e.g. -- */
+
+p:first-child {
+    font-family: cursive;
+}
+
+p:nth-child(2) {
+    font-family: Tahoma;
+}
+
+p:nth-child(3) {
+    color: #CC0000;
+}
+
+p:nth-child(4) {
+    color:#00FF00;   
+}
+
+p:nth-child(5) {
+    font-size: 22px;   
+}
+

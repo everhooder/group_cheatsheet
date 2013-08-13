@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Result</title>
+	</head>
+	<body>
+		<h3>The Box Model</h3>
+		<img src="http://s3.amazonaws.com/codecademy-blog/assets/ae09140c.png"/>
+		<p>Image courtesy of www.w3.org!</p>
+	</body>
+</html>
+
+<! -- Description:
+The margin is the space around the element. The larger the margin, the more space between our element and the elements around it. We can adjust the margin to move our HTML elements closer to or farther from each other.
+
+The border is the edge of the element. It's what we've been making visible every time we set the border property.
+
+The padding is the spacing between the content and the border. We can adjust this value with CSS to move the border closer to or farther from the content.
+
+The content is the actual "stuff" in the box. If we're talking about a <p> <! element, the "stuff" is the text of the paragraph.
+
+You'll see abbreviations like TM, TB, and TP in the diagram. These stand for "top margin," "top border," and "top padding." As we'll see, we can adjust the top, right, left, and bottom padding, border, and margin individually.
+
+
+We can change all this with the first positioning property we'll learn: the display property. We'll learn about four possible values.
+
+block: This makes the element a block box. It won't let anything sit next to it on the page! It takes up the full width.
+
+inline-block: This makes the element a block box, but will allow other elements to sit next to it on the same line.
+
+inline: This makes the element sit on the same line as another element, but without formatting it like a block. It only takes up as much width as it needs (not the whole line).
+
+none: This makes the element and its content disappear from the page entirely! -->
+
+in the css:
+
+div {
+	display: block; 
+	or
+	display: inline-block; - to sit next to each other
+	inline - suitable for selectors which are already boxes
+	none - removes everything in the div;
+}
+
+## positions:
+
+div {
+	marging: auto -- put equal left and right margins on our element, centering it on the page
+	margin-top: /*some value*/
+	margin-right: /*some value*/
+	margin-bottom: /*some value*/
+	margin-left: /*some-value*/
+or
+	margin: 1px 2px 3px 4px; -- (going from top to right to bottom to left);
+}
+
+e.g.
+div {
+	height: 50px;
+	width: 100px;
+	border: 4px #FF0000;
+	border-radius: 5px;
+	background-color: #308014;
+    margin: 20px 50px 10px 5px;
+}
+
+## padding:
+
+div {
+	
+	padding-top: /*some value*/
+	padding-right: /*some value*/
+	padding-bottom: /*some value*/
+	padding-left: /*some-value*/
+	or
+	padding: value value value value;
+}
+
+## positions:
+
+div {
+	float: right;
+}
+
+## not to put element on each other:
+element {
+    clear: /*right, left, or both*/ (both clears from all elements on right and left side)
+}
+
+<! If you don't specify an element's positioning type, it defaults to static. This just means "where the element would normally go." If you don't tell an element how to position itself, it just plunks itself down in the document. >
+
+## position:
+div {
+	position: absolute; - positioned in relation to the first parent element it has that doesn't have position: static;
+	position: static;
+	position: relative;
+	position: fixed; - to fix it even when scrolling and other elements pass;
+}
+
